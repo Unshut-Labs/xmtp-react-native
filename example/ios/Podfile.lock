@@ -528,6 +528,7 @@ DEPENDENCIES:
   - RNFS (from `../node_modules/react-native-fs`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
+  - XMTP (from `https://github.com/xmtp/xmtp-ios`, commit `d21fca9b80b9768921af4a62ab563afea27adc75`)
   - XMTPReactNative (from `../../ios`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -549,7 +550,6 @@ SPEC REPOS:
     - secp256k1.swift
     - SwiftProtobuf
     - web3.swift
-    - XMTP
 
 EXTERNAL SOURCES:
   boost:
@@ -678,10 +678,18 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   RNSVG:
     :path: "../node_modules/react-native-svg"
+  XMTP:
+    :commit: d21fca9b80b9768921af4a62ab563afea27adc75
+    :git: https://github.com/xmtp/xmtp-ios
   XMTPReactNative:
     :path: "../../ios"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
+
+CHECKOUT OPTIONS:
+  XMTP:
+    :commit: d21fca9b80b9768921af4a62ab563afea27adc75
+    :git: https://github.com/xmtp/xmtp-ios
 
 SPEC CHECKSUMS:
   BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
@@ -767,6 +775,6 @@ SPEC CHECKSUMS:
   XMTPReactNative: 7a3f29770f0d496a00d2c6457ce63d878528360e
   Yoga: e71803b4c1fff832ccf9b92541e00f9b873119b9
 
-PODFILE CHECKSUM: 95d6ace79946933ecf80684613842ee553dd76a2
+PODFILE CHECKSUM: 1bb980e73a10f9e68fbf0bda94fe6e088d26bdbe
 
-COCOAPODS: 1.14.2
+COCOAPODS: 1.15.2
